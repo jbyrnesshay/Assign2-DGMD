@@ -1,0 +1,113 @@
+.wf-loading, .wf-inactive body, .wf-inactive th, .wf-inactive td, .wf-inactive input,
+.wf-inactive textarea, .wf-josefinsans-n4-inactive, .wf-alegreya-n4-inactive, .wf-imfellenglish-n4-inactive, .wf-cedarvillecursive-n4-inactive, .wf-frederickathegreat-n4-inactive .wf-inactive {
+    font-family: Helvetica, "Lucida Sans","Lucida Grande",
+                 "Lucida Sans Unicode", sans-serif;
+    font-size: 1em;
+        letter-spacing: 0.0035em;
+        line-height: 1.3em;
+}
+
+
+
+body {
+	font-family: "Century Gothic";
+	font-size: 1em;
+        letter-spacing: 0.0055em;
+        line-height: 1.375em;
+	.wf-active & {
+		font-family: "IM Fell English";
+		letter-spacing: .02em;
+		font-size:1.1em;
+		line-height: 1.2em;	
+	}
+}
+
+h1 {
+	font-family: "Times Roman";
+	letter-spacing: .18em;
+	font-weight:700;
+	line-height: .3em;
+	padding-left: .6em;
+
+  .wf-active & {
+	 /*serif font for headings */
+  font-family: "Alegreya";
+   
+  font-weight: 700;
+  line-height: .4em;
+  letter-spacing:.14em;
+  padding-left: .25em;
+ }
+}
+
+
+h2, h3, h4, h5, h6 {
+	font-family: Arial;
+
+	.wf-active & {
+		font-family: "Josefin Sans";
+	 /*sans serif*/
+ 	 
+	//font-family: "Kavivanar";
+	font-weight: 600;
+	color:black;
+	//text-transform: lowercase;
+	//font-size: 1.5em;
+	}
+}
+
+h2 {
+	font-family: Arial;
+	font-style:italic;
+	font-weight:normal;
+	font-size: 1.3em;
+	padding: .6em .6em;
+	
+	.wf-active & {
+	font-family: "Cedarville Cursive";
+	font-weight: 400;
+	font-size: 1.4em;
+	letter-spacing: -.0421em;
+}
+}
+
+h3 {
+	font-size: 1.4em;
+	padding-left: .5em;
+	.wf-active & {
+		font-size: 1.5em;
+		padding-left: .6em;
+	}
+}
+.external h3 {
+	font-size: 1.2em;
+	padding-left: .75em;
+	.wf-active & {
+		font-size: 1.2em;
+		padding-left: .75em;
+	}
+}
+
+.headertext {
+	font-family: Arial;
+letter-spacing: .2em;
+	.wf-active & {
+		font-family: "Fredericka The Great";
+		letter-spacing:.16em;
+		line-height:.5em;
+	}
+}
+
+nav ul li a {
+	font-family: Arial;
+	 font-size:  1.05em;
+	 line-height:.5em;
+
+	.wf-active &{
+		font-family: "Alegreya";
+		 font-size: 1em;
+		 line-height:1.5em;
+
+		
+	}
+}

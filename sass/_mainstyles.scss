@@ -1,0 +1,283 @@
+/*guide--- my original grid system now uses NEAT.  grid system is declared starting line 27; media queries in general start at line 234; 
+first backgrouund image declaration at line 122; remaining responsive background images start at line 239;*/
+/*hamburger button coding starts at line 453*/
+
+/*web fonts courtesy of google at fonts.google.com */
+@import url("https://fonts.googleapis.com/css?family=Alegreya:400,400i,700,700i,900,900i|Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i|Cedarville Cursive|Fredericka+the+Great|IM+Fell+English|Open+Sans");
+
+/* Border box declaration is not here because it is provided via @import "normalize"*/
+
+body {
+    background: #fdfdfb;
+    color: black;
+    font-weight: 200;
+    line-height: 1.3em;
+    background: floralwhite;
+}
+
+/* clear my floats */
+/*clearing floats*/
+header, h1, .nav, div[data-key="clearHeights"] {
+   @include clearfix;
+
+}
+/* grid system, mostly using neat*/
+/* $grid-columns variable is set to 6 in the _variables SASS partial file, overriding the default neat 12 col grid */
+.outercontainer {
+    /*neat outer-container mixin*/
+    @include outer-container(1200px);
+}
+/*centers the columns, for now*/
+.innercontainer {
+	/*neat outer-container mixin used as an inner container*/
+	@include outer-container(92%);
+}
+.external .col-rm-4-3 {
+    margin-right: 0;
+}
+.row {
+	/*neat row mixin*/
+    @include row;
+}
+
+/*6 column grid system is declared in this section*/
+//[class^="col-"] {}
+
+.col-2-3 {
+	/*neat span-columns is used to assign spread of columns to grid items, out of 6 column system*/
+	/*this can be done as span-columns(2), but I chose to be verbose*/
+    @include span-columns(2 of 6);
+}
+.col-4-3, .col-rm-4-3 {
+    @include span-columns(4 of 6);
+}
+.col-3 {
+    @include span-columns(3 of 6);
+}
+.col-6 {
+    @include span-columns(6 of 6);
+}
+/*external class are my 2 extra pages that link to external sites with iframe/object tags*/
+/*these .external class styles adjust the column blocks to cooperate with the different (simpler) content structure on thoses pages*/
+.external .col-2-3 {
+    height: 25em;
+    margin-bottom: 3em;
+}
+.external .col-3 {
+    margin-bottom: 10em;
+}
+.external .col-6:nth-of-type(2) {
+	/*bourbon position mixin is used where i have declared a position and at least 1 of the 4 directional values*/
+    @include position(relative, null null 0 null);
+    display: block;
+    margin-top: 5em;
+}
+
+/*end basic grid structure*/
+
+/*headings, take note I have done some work on FOUT with google web font loader, relevant styles are in _typography.scss*/
+h1 {
+    position: absolute;
+    font-size: calc(1em + 2.25vmax);
+    padding: 0;
+    padding-top: 1em;
+    margin-top: 0;
+    font-weight: bolder;
+    $color: brown;
+    $color2: mix(black, brown, 10%);
+    color: $color2;
+    float: left;
+}
+/*style first leader of h1-- "Tibet." branding */
+h1::first-letter {
+ 	float:left;
+	font-size: calc(2em + 2.25vmax);
+ 	text-transform:uppercase;
+ 	position: relative;
+	margin-top: .1em;
+}
+/* style the p text following h1 inside the header */
+.headertext, .external .headertext {
+    position: relative;
+    margin-top: 0;
+    top: .75em;
+    margin-left: 50%;
+    font-size: calc(.4em + 3.0vmax);
+}
+
+/* h2's are used as the first descriptive heading on each page (e.g. "introduction")*/
+h2 {
+	@include padding(0 .25em .25em .3em);
+    margin: 0;
+    margin-right: 10vw;
+    border-bottom: 1px;
+    position: relative;
+    width: 100%;
+    background: floralwhite;
+}
+.external h2 {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.5em;
+}
+
+/* h3's are used as the main headings for the separate articles on all pages */
+h3 {
+    padding: .25em;
+    background: floralwhite;
+    padding-left: .3em;
+}
+.external h3 {
+    font-size: calc(.6em + .8vmin);
+    margin-top: 1.5em;
+}
+
+
+/* style header */
+header {
+	@include size(92% 10em);
+	@include margin(0 null 0 4%);
+	@include padding(1em null 1em .5em);
+    position: relative;
+    letter-spacing: .4em;
+    border-bottom: 1px solid black;
+}
+/*transparent background image in header, will be image changed through media queries, need body for this to work */
+body header:before {
+    @include position(absolute, 0 null null 0);
+    @include size(100%);
+    content: "";
+    background: url("../img/background2x_1200.png") no-repeat;
+    opacity: 0.7;
+    z-index: -1;
+    display: block;
+}
+/*this class is used to add a stylish block of color on the left of the header, */
+/*which also has functional use on the small device media queries to be canvas for vertical heading (created by mixin)  */
+.header-solidcolorblock {
+    position: relative;
+    float: left;
+    padding-left: 8%;
+    padding-top: 1em;
+    background: mix(white, grey, 90%);
+    margin-left: 4%;
+    height: 10em;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    padding: 2em .75em;
+    color: #999;
+    background: gainsboro;
+}
+
+/* navigation items */
+nav {
+	@include padding(.7em .7em .7em 1em);
+    @include margin(null null .25em 4%);
+    float: left;
+    background: gainsboro;
+    display: block;
+    width: 92%;
+}
+nav ul li {
+    display: inline-block;
+    border: 2px solid black;
+}
+nav ul li:first-of-type {
+    margin-left: 0;
+}
+nav ul {
+    padding: .15em;
+    list-style-type: none;
+    margin: 0;
+    border: 2px solid black;
+    display: inline-block;
+    background: snow;
+}
+nav ul li a {
+	/* here I am just exploring the compass link-colors mixin in a very simple way */
+    @include link-colors(black, white);
+    /* use the bourbon linear-gradient mixin, though it is to be deprecated */
+    @include linear-gradient(to top, rgba(210, 235, 249, 1), rgba(254, 255, 255, 1));
+    background: white;
+    text-transform: uppercase;
+    padding: 0 .1em;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    background: grey;
+}
+
+/* articles contain main content text and main content images */
+.external article p {
+    padding: 0;
+}
+article {
+	/* using the soon deprecated linear-gradient bourbon mixin */
+    @include linear-gradient(to top, rgba(255, 251, 245, 1), rgba(249, 221, 169, 1));
+}
+article p {
+	@include margin(1em 1em 1.9em 1em);
+}
+/* I  put the word "January" in a span class on the homepage to avoid the page breaking at any point to the word "in" by itself, in the "introduction" article */
+article .jan {
+    display: inline-block;
+    word-wrap: normal;
+}
+
+/* picture/image stying */
+article img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+}
+div picture {
+    @include padding(null .7em .4em 1em);
+    float: left;
+}
+/*change the float scheme for images for exceptional case on sights.html*/
+#sights div picture {
+    float: right;
+    padding: 1em;
+}
+
+/* default behavior of some burger button classes that are utilitized in smallest media query */
+#burger-btn {
+    display: none;
+}
+.dropcontent {
+    position: relative;
+
+}
+
+/* iframe and object are used in frame1.html and frame2.html, these styles set up the control of these pages */
+
+/*styling the descriptive text about what goes in on the iframe pages */
+body .iframe.col-rm-4-3 p {
+    background: floralwhite;
+    font-family: Arial, sans-serif;
+    font-size: .9em;
+}
+body iframe.col-rm-4-3 {
+    height: 50em;
+}
+/* keeps the iframe windows trancated, with allowable scrolling, so the page on desktop dimensions doesn't just go on for great height, and 
+so can see  the footer within a reasonable spread */
+.manageHeight {
+    position: relative;
+    border: 2px solid black;
+    padding: 1em;
+}
+/*dont include object in base case.  it will be turned on at mobile dimensions, where iframe will instead not be displayed */
+body object.col-rm-4-3 {
+    display: none;
+}
+/*.external .col-6:nth-of-type(2) {
+    @include position(relative, 5em null null null);
+    display: block;
+    margin-top: 5em;
+    border: 15px solid black;
+}*/

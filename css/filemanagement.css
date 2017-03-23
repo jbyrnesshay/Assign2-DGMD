@@ -1,0 +1,1665 @@
+@import url("https://fonts.googleapis.com/css?family=Alegreya:400,400i,700,700i,900,900i|Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i|Cedarville Cursive|Fredericka+the+Great|IM+Fell+English|Open+Sans");
+/* line 4, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/bower_components/neat/app/assets/stylesheets/grid/_box-sizing.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 9, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/bower_components/neat/app/assets/stylesheets/grid/_box-sizing.scss */
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+/*!normalize.css v2.1.3|MIT License|git.io/normalize*/
+/* line 10, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* line 26, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/* line 34, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 41, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+[hidden],
+template {
+  display: none;
+}
+
+/* line 51, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 57, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+body {
+  margin: 0;
+}
+
+/* line 64, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+a {
+  background: transparent;
+}
+
+/* line 69, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+a:focus {
+  outline: thin dotted;
+}
+
+/* line 74, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* line 83, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 89, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 94, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 100, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+dfn {
+  font-style: italic;
+}
+
+/* line 105, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/* line 111, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+mark {
+  background: #FF0;
+  color: #000;
+}
+
+/* line 117, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/* line 126, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+pre {
+  white-space: pre-wrap;
+}
+
+/* line 131, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/* line 136, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+small {
+  font-size: 80%;
+}
+
+/* line 141, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 148, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+sup {
+  top: -0.5em;
+}
+
+/* line 151, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 158, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+img {
+  border: 0;
+}
+
+/* line 163, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 170, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+figure {
+  margin: 0;
+}
+
+/* line 177, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+fieldset {
+  border: 1px solid #C0C0C0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 185, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+legend {
+  border: 0;
+  padding: 0;
+}
+
+/* line 193, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+/* line 204, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+button,
+input {
+  line-height: normal;
+}
+
+/* line 213, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+button,
+select {
+  text-transform: none;
+}
+
+/* line 223, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 232, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/* line 239, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 248, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+
+/* line 255, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 261, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 269, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* line 277, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/scout-files/mixins/_normalize.sass */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 18, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_variables.scss */
+.big {
+  background: #0088ff;
+}
+
+/*work in progress:  this is really 2 mixins in one, need to separate */
+/*guide--- my original grid system now uses NEAT.  grid system is declared starting line 27; media queries in general start at line 234; 
+first backgrouund image declaration at line 122; remaining responsive background images start at line 239;*/
+/*hamburger button coding starts at line 453*/
+/*web fonts courtesy of google at fonts.google.com */
+/* Border box declaration is not here because it is provided via @import "normalize"*/
+/* line 10, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mainstyles.scss */
+body {
+  background: #fdfdfb;
+  color: black;
+  font-weight: 200;
+  line-height: 1.3em;
+  background: floralwhite;
+}
+
+/* clear my floats */
+/*clearing floats*/
+/* line 20, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/bower_components/neat/app/assets/stylesheets/mixins/_clearfix.scss */
+header::after, h1::after, .nav::after, div[data-key="clearHeights"]::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+/* grid system, mostly using neat*/
+/* $grid-columns variable is set to 6 in the _variables SASS partial file, overriding the default neat 12 col grid */
+/* line 26, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mainstyles.scss */
+.outercontainer {
+  /*neat outer-container mixin*/
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 20, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/bower_components/neat/app/assets/stylesheets/mixins/_clearfix.scss */
+.outercontainer::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+/*centers the columns, for now*/
+/* line 31, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mainstyles.scss */
+.innercontainer {
+  /*neat outer-container mixin used as an inner container*/
+  max-width: 92%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 20, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/bower_components/neat/app/assets/stylesheets/mixins/_clearfix.scss */
+.innercontainer::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+/* line 35, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mainstyles.scss */
+.external .col-rm-4-3 {
+  margin-right: 0;
+}
+
+/* line 38, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mainstyles.scss */
+.row {
+  /*neat row mixin*/
+  display: block;
+}
+
+/* line 20, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/bower_components/neat/app/assets/stylesheets/mixins/_clearfix.scss */
+.row::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+/*6 column grid system is declared in this section*/
+/* line 46, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mainstyles.scss */
+.col-2-3 {
+  /*neat span-columns is used to assign spread of columns to grid items, out of 6 column system*/
+  /*this can be done as span-columns(2), but I chose to be verbose*/
+  float: left;
+  display: block;
+  margin-right: 4.82916%;
+  width: 30.11389%;
+}
+
+/* line 89, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
+.col-2-3:last-child {
+  margin-right: 0;
+}
+
+/* line 51, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mainstyles.scss */
+.col-4-3, .col-rm-4-3 {
+  float: left;
+  display: block;
+  margin-right: 4.82916%;
+  width: 65.05695%;
+}
+
+/* line 89, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
+.col-4-3:last-child, .col-rm-4-3:last-child {
+  margin-right: 0;
+}
+
+/* line 54, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mainstyles.scss */
+.col-3 {
+  float: left;
+  display: block;
+  margin-right: 4.82916%;
+  width: 47.58542%;
+}
+
+/* line 89, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
+.col-3:last-child {
+  margin-right: 0;
+}
+
+/* line 57, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mainstyles.scss */
+.col-6 {
+  float: left;
+  display: block;
+  margin-right: 4.82916%;
+  width: 100%;
+}
+
+/* line 89, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
+.col-6:last-child {
+  margin-right: 0;
+}
+
+/*external class are my 2 extra pages that link to external sites with iframe/object tags*/
+/*these .external class styles adjust the column blocks to cooperate with the different (simpler) content structure on thoses pages*/
+/* line 62, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mainstyles.scss */
+.external .col-2-3 {
+  height: 25em;
+  margin-bottom: 3em;
+}
+
+/* line 66, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mainstyles.scss */
+.external .col-3 {
+  margin-bottom: 10em;
+}
+
+/* line 69, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mainstyles.scss */
+.external .col-6:nth-of-type(2) {
+  /*bourbon position mixin is used where i have declared a position and at least 1 of the 4 directional values*/
+  position: relative;
+  bottom: 0;
+  display: block;
+  margin-top: 5em;
+}
+
+/*end basic grid structure*/
+/*headings, take note I have done some work on FOUT with google web font loader, relevant styles are in _typography.scss*/
+/* line 79, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mainstyles.scss */
+h1 {
+  position: absolute;
+  font-size: calc(1em + 2.25vmax);
+  padding: 0;
+  padding-top: 1em;
+  margin-top: 0;
+  font-weight: bolder;
+  color: #952626;
+  float: left;
+}
+
+/*style first leader of h1-- "Tibet." branding */
+/* line 92, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mainstyles.scss */
+h1::first-letter {
+  float: left;
+  font-size: calc(2em + 2.25vmax);
+  text-transform: uppercase;
+  position: relative;
+  margin-top: .1em;
+}
+
+/* style the p text following h1 inside the header */
+/* line 100, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mainstyles.scss */
+.headertext, .external .headertext {
+  position: relative;
+  margin-top: 0;
+  top: .75em;
+  margin-left: 50%;
+  font-size: calc(.4em + 3.0vmax);
+}
+
+/* h2's are used as the first descriptive heading on each page (e.g. "introduction")*/
+/* line 109, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mainstyles.scss */
+h2 {
+  padding: 0 0.25em 0.25em 0.3em;
+  margin: 0;
+  margin-right: 10vw;
+  border-bottom: 1px;
+  position: relative;
+  width: 100%;
+  background: floralwhite;
+}
+
+/* line 118, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mainstyles.scss */
+.external h2 {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1.5em;
+}
+
+/* h3's are used as the main headings for the separate articles on all pages */
+/* line 126, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mainstyles.scss */
+h3 {
+  padding: .25em;
+  background: floralwhite;
+  padding-left: .3em;
+}
+
+/* line 131, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mainstyles.scss */
+.external h3 {
+  font-size: calc(.6em + .8vmin);
+  margin-top: 1.5em;
+}
+
+/* style header */
+/* line 138, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mainstyles.scss */
+header {
+  height: 10em;
+  width: 92%;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 4%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 0.5em;
+  position: relative;
+  letter-spacing: .4em;
+  border-bottom: 1px solid black;
+}
+
+/*transparent background image in header, will be image changed through media queries, need body for this to work */
+/* line 147, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mainstyles.scss */
+body header:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background: url("../img/background2x_1200.png") no-repeat;
+  opacity: 0.7;
+  z-index: -1;
+  display: block;
+}
+
+/*this class is used to add a stylish block of color on the left of the header, */
+/*which also has functional use on the small device media queries to be canvas for vertical heading (created by mixin)  */
+/* line 158, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mainstyles.scss */
+.header-solidcolorblock {
+  position: relative;
+  float: left;
+  padding-left: 8%;
+  padding-top: 1em;
+  background: #f2f2f2;
+  margin-left: 4%;
+  height: 10em;
+}
+
+/* footer */
+/* line 169, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mainstyles.scss */
+footer {
+  width: 100%;
+  padding: 2em .75em;
+  color: #999;
+  background: gainsboro;
+}
+
+/* navigation items */
+/* line 177, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mainstyles.scss */
+nav {
+  padding: 0.7em 0.7em 0.7em 1em;
+  margin-bottom: 0.25em;
+  margin-left: 4%;
+  float: left;
+  background: gainsboro;
+  display: block;
+  width: 92%;
+}
+
+/* line 185, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mainstyles.scss */
+nav ul li {
+  display: inline-block;
+  border: 2px solid black;
+}
+
+/* line 189, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mainstyles.scss */
+nav ul li:first-of-type {
+  margin-left: 0;
+}
+
+/* line 192, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mainstyles.scss */
+nav ul {
+  padding: .15em;
+  list-style-type: none;
+  margin: 0;
+  border: 2px solid black;
+  display: inline-block;
+  background: snow;
+}
+
+/* line 200, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mainstyles.scss */
+nav ul li a {
+  /* here I am just exploring the compass link-colors mixin in a very simple way */
+  color: black;
+  /* use the bourbon linear-gradient mixin, though it is to be deprecated */
+  background-color: #d2ebf9;
+  background-image: -webkit-linear-gradient(bottom, #d2ebf9, #feffff);
+  background-image: linear-gradient(to top,#d2ebf9, #feffff);
+  background: white;
+  text-transform: uppercase;
+  padding: 0 .1em;
+  text-decoration: none;
+}
+
+/* line 24, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/bower_components/compass-mixins/lib/compass/typography/links/_link-colors.scss */
+nav ul li a:hover {
+  color: white;
+}
+
+/* line 210, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mainstyles.scss */
+nav ul li a:hover {
+  background: grey;
+}
+
+/* articles contain main content text and main content images */
+/* line 215, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mainstyles.scss */
+.external article p {
+  padding: 0;
+}
+
+/* line 218, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mainstyles.scss */
+article {
+  /* using the soon deprecated linear-gradient bourbon mixin */
+  background-color: #fffbf5;
+  background-image: -webkit-linear-gradient(bottom, #fffbf5, #f9dda9);
+  background-image: linear-gradient(to top,#fffbf5, #f9dda9);
+}
+
+/* line 222, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mainstyles.scss */
+article p {
+  margin: 1em 1em 1.9em;
+}
+
+/* I  put the word "January" in a span class on the homepage to avoid the page breaking at any point to the word "in" by itself, in the "introduction" article */
+/* line 226, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mainstyles.scss */
+article .jan {
+  display: inline-block;
+  word-wrap: normal;
+}
+
+/* picture/image stying */
+/* line 232, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mainstyles.scss */
+article img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 5px;
+}
+
+/* line 237, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mainstyles.scss */
+div picture {
+  padding-right: 0.7em;
+  padding-bottom: 0.4em;
+  padding-left: 1em;
+  float: left;
+}
+
+/*change the float scheme for images for exceptional case on sights.html*/
+/* line 242, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mainstyles.scss */
+#sights div picture {
+  float: right;
+  padding: 1em;
+}
+
+/* default behavior of some burger button classes that are utilitized in smallest media query */
+/* line 248, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mainstyles.scss */
+#burger-btn {
+  display: none;
+}
+
+/* line 251, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mainstyles.scss */
+.dropcontent {
+  position: relative;
+}
+
+/* iframe and object are used in frame1.html and frame2.html, these styles set up the control of these pages */
+/*styling the descriptive text about what goes in on the iframe pages */
+/* line 259, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mainstyles.scss */
+body .iframe.col-rm-4-3 p {
+  background: floralwhite;
+  font-family: Arial, sans-serif;
+  font-size: .9em;
+}
+
+/* line 264, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mainstyles.scss */
+body iframe.col-rm-4-3 {
+  height: 50em;
+}
+
+/* keeps the iframe windows trancated, with allowable scrolling, so the page on desktop dimensions doesn't just go on for great height, and 
+so can see  the footer within a reasonable spread */
+/* line 269, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mainstyles.scss */
+.manageHeight {
+  position: relative;
+  border: 2px solid black;
+  padding: 1em;
+}
+
+/*dont include object in base case.  it will be turned on at mobile dimensions, where iframe will instead not be displayed */
+/* line 275, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mainstyles.scss */
+body object.col-rm-4-3 {
+  display: none;
+}
+
+/*.external .col-6:nth-of-type(2) {
+    @include position(relative, 5em null null null);
+    display: block;
+    margin-top: 5em;
+    border: 15px solid black;
+}*/
+/* accordian tabs refill pattern from http://refills.bourbon.io/ */
+/* line 3, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_functions.scss */
+.accordion-tabs {
+  line-height: 1.5;
+  margin-bottom: 1.5em;
+  padding: 0;
+}
+
+/* line 20, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/bower_components/neat/app/assets/stylesheets/mixins/_clearfix.scss */
+.accordion-tabs::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+@media screen and (max-width: 40em) {
+  /* line 3, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_functions.scss */
+  .accordion-tabs {
+    border: 1px solid #dcdcdc;
+    border-radius: 3px;
+  }
+}
+
+/* line 29, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_functions.scss */
+.accordion-tabs .tab-header-and-content {
+  list-style: none;
+}
+
+@media screen and (min-width: 40em) {
+  /* line 29, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_functions.scss */
+  .accordion-tabs .tab-header-and-content {
+    display: inline;
+  }
+}
+
+/* line 36, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_functions.scss */
+.accordion-tabs .tab-header-and-content:first-child .tab-link {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+@media screen and (max-width: 40em) {
+  /* line 36, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_functions.scss */
+  .accordion-tabs .tab-header-and-content:first-child .tab-link {
+    border-top: 0;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  /* line 45, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_functions.scss */
+  .accordion-tabs .tab-header-and-content:last-child .tab-link {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+}
+
+/* line 53, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_functions.scss */
+.accordion-tabs .tab-link {
+  background-color: #fff;
+  border-top: 1px solid #dcdcdc;
+  color: #333;
+  display: block;
+  font-weight: bold;
+  padding: 0.75em 0.809em;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 40em) {
+  /* line 53, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_functions.scss */
+  .accordion-tabs .tab-link {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-top: 0;
+    display: inline-block;
+  }
+}
+
+/* line 68, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_functions.scss */
+.accordion-tabs .tab-link:hover {
+  color: #477dca;
+}
+
+/* line 72, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_functions.scss */
+.accordion-tabs .tab-link:focus {
+  outline: none;
+}
+
+/* line 76, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_functions.scss */
+.accordion-tabs .tab-link.is-active {
+  background-color: #f7f7f7;
+}
+
+@media screen and (min-width: 40em) {
+  /* line 76, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_functions.scss */
+  .accordion-tabs .tab-link.is-active {
+    background-color: #f7f7f7;
+    border: 1px solid #dcdcdc;
+    border-bottom-color: #f7f7f7;
+    margin-bottom: -1px;
+  }
+}
+
+/* line 88, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_functions.scss */
+.accordion-tabs .tab-content {
+  background: #f7f7f7;
+  display: none;
+  padding: 1.5em 1.618em;
+  width: 100%;
+}
+
+@media screen and (min-width: 40em) {
+  /* line 88, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_functions.scss */
+  .accordion-tabs .tab-content {
+    border: 1px solid #dcdcdc;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    float: left;
+  }
+}
+
+/* hover tile animation refill component from 
+http://refills.bourbon.io/components/
+*/
+/* line 111, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_functions.scss */
+.hover-tile-outer {
+  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png");
+  background-color: beige;
+  background-position: top;
+  background-size: cover;
+  border: 1px solid gainsboro;
+  cursor: pointer;
+  height: 10em;
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 40em) {
+  /* line 111, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_functions.scss */
+  .hover-tile-outer {
+    width: 40%;
+  }
+}
+
+/* line 131, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_functions.scss */
+.hover-tile-outer .hover-tile-container {
+  height: 10em;
+  overflow: hidden;
+}
+
+/* line 136, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_functions.scss */
+.hover-tile-outer .hover-tile-container:hover > .hover-tile {
+  transform: translate(0, -100%);
+}
+
+/* line 140, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_functions.scss */
+.hover-tile-outer .hover-tile {
+  background: inherit;
+  color: white;
+  height: inherit;
+  overflow: hidden;
+  padding: 1.5em;
+  transition: all 0.2s ease-in-out;
+}
+
+/* line 149, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_functions.scss */
+.hover-tile-outer .hover-tile-hidden {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* line 152, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_functions.scss */
+.hover-tile-outer .hover-tile-hidden p {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 24px;
+}
+
+/* line 157, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_functions.scss */
+.hover-tile-outer .hover-tile-hidden h4 {
+  margin: 0 0 0.5em 0;
+}
+
+/*natalya's color functions https://github.com/tallys/color-theory/blob/master/source/stylesheets/_variables.scss*/
+/* miscellanous- non-device based media queries  */
+/*this is my first header background image swap */
+@media (max-width: 900px) {
+  /* line 6, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mediaqueries.scss */
+  body header:before {
+    background: url("../img/tibet_background1_900x.png") no-repeat;
+    /*only this image is not my own (not photographed by me), the image here named tibet_background1_900x.png is from pixabay.com */
+  }
+}
+
+/* mid-range tablet dimensions */
+@media (min-width: 480px) and (max-width: 767px) {
+  /* line 5, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mediumtablet.scss */
+  .col-1-2, .col-2, .col-4-3, .col-2-3, .col-rm-4-3 {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 47.58542%;
+  }
+  /* line 89, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
+  .col-1-2:last-child, .col-2:last-child, .col-4-3:last-child, .col-2-3:last-child, .col-rm-4-3:last-child {
+    margin-right: 0;
+  }
+  /* line 8, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mediumtablet.scss */
+  ul {
+    display: block;
+  }
+  /* line 15, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mediumtablet.scss */
+  nav ul li a {
+    box-shadow: initial;
+    border-radius: initial;
+  }
+  /* line 19, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mediumtablet.scss */
+  nav ul {
+    text-align: center;
+    display: block;
+  }
+  /* line 23, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mediumtablet.scss */
+  nav ul li {
+    margin-left: 6%;
+  }
+  /* line 26, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mediumtablet.scss */
+  nav {
+    padding: .35em;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 759px) {
+  /* line 32, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mediumtablet.scss */
+  p.headertext {
+    width: 15em;
+    left: -3em;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 599px) {
+  /*verticalheader self-coded mixin uses :after to fill content into empty spans in html, where each span holds a letter*/
+  /* these are then rotated to create a vertical header */
+  /* line 18, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mixins.scss */
+  .header-solidcolorblock span:nth-child(5)::after {
+    content: "T";
+    display: block;
+    letter-spacing: .01em;
+    transform: rotate(-90deg);
+    font-family: Alegreya;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: brown;
+    width: 1.2em;
+    height: 1.1em;
+    left: -1em;
+    position: relative;
+    text-shadow: 5px 5px 15px grey;
+  }
+  /* line 18, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mixins.scss */
+  .header-solidcolorblock span:nth-child(4)::after {
+    content: "i";
+    display: block;
+    letter-spacing: .01em;
+    transform: rotate(-90deg);
+    font-family: Alegreya;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: brown;
+    width: 1.2em;
+    height: 1.1em;
+    left: -1em;
+    position: relative;
+    text-shadow: 5px 5px 15px grey;
+  }
+  /* line 18, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mixins.scss */
+  .header-solidcolorblock span:nth-child(3)::after {
+    content: "b";
+    display: block;
+    letter-spacing: .01em;
+    transform: rotate(-90deg);
+    font-family: Alegreya;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: brown;
+    width: 1.2em;
+    height: 1.1em;
+    left: -1em;
+    position: relative;
+    text-shadow: 5px 5px 15px grey;
+  }
+  /* line 18, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mixins.scss */
+  .header-solidcolorblock span:nth-child(2)::after {
+    content: "e";
+    display: block;
+    letter-spacing: .01em;
+    transform: rotate(-90deg);
+    font-family: Alegreya;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: brown;
+    width: 1.2em;
+    height: 1.1em;
+    left: -1em;
+    position: relative;
+    text-shadow: 5px 5px 15px grey;
+  }
+  /* line 18, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mixins.scss */
+  .header-solidcolorblock span:nth-child(1)::after {
+    content: "t";
+    display: block;
+    letter-spacing: .01em;
+    transform: rotate(-90deg);
+    font-family: Alegreya;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: brown;
+    width: 1.2em;
+    height: 1.1em;
+    left: -1em;
+    position: relative;
+    text-shadow: 5px 5px 15px grey;
+  }
+  /* line 6, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mixins.scss */
+  h1.rotateh1 span:nth-child(5) {
+    display: block;
+    color: orange;
+    transform: rotate(30deg);
+  }
+  /* line 6, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mixins.scss */
+  h1.rotateh1 span:nth-child(4) {
+    display: block;
+    color: red;
+    transform: rotate(30deg);
+  }
+  /* line 6, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mixins.scss */
+  h1.rotateh1 span:nth-child(3) {
+    display: block;
+    color: yellow;
+    transform: rotate(30deg);
+  }
+  /* line 6, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mixins.scss */
+  h1.rotateh1 span:nth-child(2) {
+    display: block;
+    color: green;
+    transform: rotate(30deg);
+  }
+  /* line 6, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mixins.scss */
+  h1.rotateh1 span:nth-child(1) {
+    display: block;
+    color: blue;
+    transform: rotate(30deg);
+  }
+  /* line 44, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mediumtablet.scss */
+  body header:before {
+    background: url("../img/background_640.png") no-repeat;
+  }
+  /* line 47, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mediumtablet.scss */
+  .header-solidcolorblock {
+    width: 12%;
+  }
+  /* line 54, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mediumtablet.scss */
+  header {
+    border-bottom: 1px solid black;
+    width: 80%;
+    padding: 1em;
+    padding-top: 0;
+    margin: 0;
+    margin-left: 16%;
+    position: relative;
+    right: 0;
+    letter-spacing: .4em;
+    text-align: center;
+    height: 10em;
+  }
+}
+
+/*for larger phones and smaller tablets  */
+@media (min-width: 480px) and (max-width: 599px) {
+  /* line 6, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_largephone.scss */
+  .col-rm-4-3 {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 100%;
+  }
+  /* line 89, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
+  .col-rm-4-3:last-child {
+    margin-right: 0;
+  }
+  /* line 10, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_largephone.scss */
+  .col-2-3 {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 47.58542%;
+  }
+  /* line 89, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
+  .col-2-3:last-child {
+    margin-right: 0;
+  }
+  /* line 14, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_largephone.scss */
+  .external .col-2-3 {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 100%;
+    height: 7.5em;
+  }
+  /* line 89, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
+  .external .col-2-3:last-child {
+    margin-right: 0;
+  }
+  /* line 19, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_largephone.scss */
+  .external .col-2-3 p {
+    padding: 0;
+    margin: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  /* line 25, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_largephone.scss */
+  ul {
+    background: blue;
+    border: initial;
+    padding: 0;
+    display: inline-block;
+  }
+  /* line 20, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/bower_components/neat/app/assets/stylesheets/mixins/_clearfix.scss */
+  ul::after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+  /* line 34, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_largephone.scss */
+  li {
+    display: inline-block;
+    margin: 0;
+    height: 1.8em;
+  }
+  /* line 39, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_largephone.scss */
+  nav ul li a {
+    background-color: #f7fbfc;
+    background-image: -webkit-linear-gradient(bottom, #f7fbfc 0%, #d9edf2 40%, #add9e4 100%);
+    background-image: linear-gradient(to top,#f7fbfc 0%, #d9edf2 40%, #add9e4 100%);
+    margin: 0;
+    height: 1.65em;
+    border: 1px solid black;
+  }
+  /* via self coded mixin stack-li, using technique learned in class to stack li on shrink screen using odd/even */
+  /* line 48, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_largephone.scss */
+  li {
+    /* $selector was assigned the value of parent selector using ampersand in _largephone.scss media query */
+    /* $selector was assigned the value of parent selector using ampersand in _largephone.scss media query */
+  }
+  /* line 56, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mixins.scss */
+  li:nth-of-type(odd) {
+    float: left;
+    width: 50%;
+    margin: 0;
+  }
+  /* line 56, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mixins.scss */
+  li:nth-of-type(even) {
+    float: right;
+    width: 50%;
+    margin: 0;
+  }
+  /* line 53, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_largephone.scss */
+  li a {
+    /* $selector was assigned the value of parent selector using ampersand in _largephone.scss media query */
+    /* $selector was assigned the value of parent selector using ampersand in _largephone.scss media query */
+  }
+  /* line 45, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mixins.scss */
+  li a:nth-of-type(odd) {
+    float: right;
+    width: 100%;
+    margin: 0;
+  }
+  /* line 45, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mixins.scss */
+  li a:nth-of-type(even) {
+    float: left;
+    width: 100%;
+    margin: 0;
+  }
+  /* line 60, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_largephone.scss */
+  header {
+    color: white;
+    margin-right: 30em;
+    padding-top: 0em;
+  }
+  /* line 65, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_largephone.scss */
+  header:before {
+    height: 100%;
+    width: 100%;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .8;
+    z-index: -1;
+    background-size: cover;
+  }
+  /* line 76, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_largephone.scss */
+  h1 {
+    margin-top: 0em;
+    margin-left: 2em;
+    margin-bottom: 1.4em;
+    color: white;
+  }
+  /* line 82, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_largephone.scss */
+  p.headertext {
+    font-size: 1.5em;
+    width: 10em;
+    left: -2.9em;
+    top: .5em;
+    color: grey;
+  }
+}
+
+/* for iphone and small phone screen dimensions.  all rows are follow columna at this screen size */
+@media (max-width: 479px) {
+  /* line 5, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_smallphone.scss */
+  body header:before {
+    background: url("../img/background_480.png") no-repeat;
+  }
+  /* line 18, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mixins.scss */
+  .header-solidcolorblock span:nth-child(5)::after {
+    content: "T";
+    display: block;
+    letter-spacing: .01em;
+    transform: rotate(-90deg);
+    font-family: Alegreya;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: brown;
+    width: 1.2em;
+    height: 1.1em;
+    left: -1em;
+    position: relative;
+    text-shadow: 5px 5px 15px grey;
+  }
+  /* line 18, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mixins.scss */
+  .header-solidcolorblock span:nth-child(4)::after {
+    content: "i";
+    display: block;
+    letter-spacing: .01em;
+    transform: rotate(-90deg);
+    font-family: Alegreya;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: brown;
+    width: 1.2em;
+    height: 1.1em;
+    left: -1em;
+    position: relative;
+    text-shadow: 5px 5px 15px grey;
+  }
+  /* line 18, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mixins.scss */
+  .header-solidcolorblock span:nth-child(3)::after {
+    content: "b";
+    display: block;
+    letter-spacing: .01em;
+    transform: rotate(-90deg);
+    font-family: Alegreya;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: brown;
+    width: 1.2em;
+    height: 1.1em;
+    left: -1em;
+    position: relative;
+    text-shadow: 5px 5px 15px grey;
+  }
+  /* line 18, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mixins.scss */
+  .header-solidcolorblock span:nth-child(2)::after {
+    content: "e";
+    display: block;
+    letter-spacing: .01em;
+    transform: rotate(-90deg);
+    font-family: Alegreya;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: brown;
+    width: 1.2em;
+    height: 1.1em;
+    left: -1em;
+    position: relative;
+    text-shadow: 5px 5px 15px grey;
+  }
+  /* line 18, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_mixins.scss */
+  .header-solidcolorblock span:nth-child(1)::after {
+    content: "t";
+    display: block;
+    letter-spacing: .01em;
+    transform: rotate(-90deg);
+    font-family: Alegreya;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: brown;
+    width: 1.2em;
+    height: 1.1em;
+    left: -1em;
+    position: relative;
+    text-shadow: 5px 5px 15px grey;
+  }
+  /* line 11, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_smallphone.scss */
+  [class*="col-"] {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 100%;
+    border-bottom: 1px solid black;
+    margin-bottom: 1em;
+  }
+  /* line 89, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
+  [class*="col-"]:last-child {
+    margin-right: 0;
+  }
+  /* line 17, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_smallphone.scss */
+  .headertext {
+    width: 10em;
+    font-size: .9em;
+  }
+  /*at this screen dimension, I tun off the iframe display, and turn on the object display */
+  /* line 22, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_smallphone.scss */
+  body iframe.col-rm-4-3 {
+    display: none;
+  }
+  /* line 25, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_smallphone.scss */
+  h1 {
+    visibility: hidden;
+  }
+  /* i used an object tag with px height only for the special case of windowing an external page within my page in frame1.html and frame2.html
+	only in the case where we are viewing at iphone screen dimensions, otherewise I use iframe.  
+	I was not able to keep the iframe restricted to screen width in all use cases on the iphone*/
+  /* line 32, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_smallphone.scss */
+  body object.col-rm-4-3 {
+    height: 10000px;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    max-width: 100%;
+    display: block;
+  }
+  /* line 40, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_smallphone.scss */
+  .header-solidcolorblock {
+    height: 7.5em;
+  }
+  /* line 43, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_smallphone.scss */
+  .header-solidcolorblock span::after {
+    top: -1.2em;
+    position: relative;
+    margin-left: .5em;
+  }
+  /* line 49, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_smallphone.scss */
+  header {
+    height: 7.5em;
+  }
+  /*height auto to shrink to content in mobile case */
+  /* line 54, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_smallphone.scss */
+  .external .col-2-3 {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 100%;
+    height: auto;
+    padding: .3em;
+  }
+  /* line 89, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
+  .external .col-2-3:last-child {
+    margin-right: 0;
+  }
+  /* line 59, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_smallphone.scss */
+  .external .col-2-3 p {
+    padding: 0;
+    margin: 0;
+  }
+  /* line 63, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_smallphone.scss */
+  .col-rm-4-3 {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 100%;
+  }
+  /* line 89, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
+  .col-rm-4-3:last-child {
+    margin-right: 0;
+  }
+  /* line 66, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_smallphone.scss */
+  .col-6 {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 100%;
+  }
+  /* line 89, C:/Users/winescape-xx/Downloads/WIN_Scout-App_2.12.12/Scout-App/bower_components/neat/app/assets/stylesheets/grid/_span-columns.scss */
+  .col-6:last-child {
+    margin-right: 0;
+  }
+  /* line 69, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_smallphone.scss */
+  nav ul {
+    width: 44%;
+    float: left;
+  }
+  /* line 73, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_smallphone.scss */
+  nav ul li {
+    margin-left: 0;
+    margin-bottom: .75em;
+    background: purple;
+  }
+  /* line 78, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_smallphone.scss */
+  nav ul li a {
+    border-radius: 0px;
+  }
+  /* line 81, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_smallphone.scss */
+  ul {
+    padding: 0;
+  }
+  /* to follow is burger icon/menu code, various divs and classes and styling used to create the burger menu and to have javascript control 
+	over the functionality as I wanted  it to be */
+  /*used css transition to ease dropdown display, technique from here.  http://stackoverflow.com/questions/3508605/how-can-i-transition-height-0-to-height-auto-using-css*/
+  /* had some difficulties with getting the display off/on to work using display:none, so researched and found out about transform scaleY
+ 	https://developer.mozilla.org/en-US/docs/Web/CSS/transform */
+  /* line 94, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_smallphone.scss */
+  .dropcontent {
+    position: absolute;
+    margin-top: .5em;
+    right: .04em;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform ease .3s;
+    visibility: hidden;
+  }
+  /*this div class is just fixing some dimensions so that when the hamburger icon changes occur it does not push other elements */
+  /* line 106, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_smallphone.scss */
+  .fixbuttonheight {
+    height: 3em;
+    padding: 0em;
+  }
+  /* line 110, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_smallphone.scss */
+  #burger-btn {
+    position: absolute;
+    right: 0;
+    display: block;
+    width: 3em;
+    margin-right: 1em;
+    background: inherit;
+    padding: .4em;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  /* line 122, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_smallphone.scss */
+  #burger-btn:hover {
+    border: 1px solid black;
+    background: aqua;
+  }
+  /* line 126, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_smallphone.scss */
+  #burger-btn:focus {
+    outline: 1px solid black;
+  }
+  /*this use of outline with :focus gets rid of blue border on focus in chrome, which was bothering me, see at
+	http://stackoverflow.com/questions/20340138/remove-blue-border-from-css-custom-styled-button-in-chrome
+	*/
+  /* line 132, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_smallphone.scss */
+  li {
+    width: 7em;
+  }
+  /* line 135, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_smallphone.scss */
+  nav {
+    padding-right: 0;
+  }
+  /*top and obttom hamburger lines. idea from https://superdevresources.com/css-hamburger-menu/ */
+  /* line 139, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_smallphone.scss */
+  .hamburger-lines {
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    position: relative;
+    height: 2em;
+    display: block;
+    width: 2em;
+  }
+  /*hamburger:before method technique for middle hamburger line from 
+	https://superdevresources.com/css-hamburger-menu/ */
+  /* line 150, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_smallphone.scss */
+  .hamburger-lines:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 45%;
+    border-top: 3px solid black;
+  }
+  /*using transform rotate to make neat rotation of hamburger icon when clicked/opened */
+  /* line 159, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_smallphone.scss */
+  #burger-btn.rotate {
+    transform: rotate(90deg);
+  }
+  /* line 162, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_smallphone.scss */
+  button#burger-btn div {
+    background: black;
+    position: relative;
+    display: block;
+    height: 5px;
+    width: 65%;
+    margin: .4em;
+  }
+  /* line 171, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_smallphone.scss */
+  #burger-btn:focus {
+    border: none;
+  }
+  /* line 174, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_smallphone.scss */
+  #drop-area {
+    position: relative;
+    display: block;
+    float: right;
+  }
+  /* line 179, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_smallphone.scss */
+  #ul {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+  /* line 184, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_smallphone.scss */
+  .dropcontent a {
+    display: block;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+  }
+  /* line 190, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_smallphone.scss */
+  nav ul li a:hover {
+    background: grey;
+    color: white;
+  }
+  /* line 194, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_smallphone.scss */
+  nav ul li a:focus {
+    background: aqua;
+  }
+  /* line 197, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_smallphone.scss */
+  nav ul li {
+    padding: 0em;
+    margin: 0;
+  }
+  /* line 201, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_smallphone.scss */
+  nav ul li a {
+    padding: 0;
+    border: 1px solid black;
+  }
+  /* class used in burger menu, added via javascript to displpay dropdown*/
+  /* line 206, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_smallphone.scss */
+  .show {
+    visibility: visible;
+    transform: scaleY(1);
+  }
+}
+
+/* line 1, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_typography.scss */
+.wf-loading, .wf-inactive body, .wf-inactive th, .wf-inactive td, .wf-inactive input,
+.wf-inactive textarea, .wf-josefinsans-n4-inactive, .wf-alegreya-n4-inactive, .wf-imfellenglish-n4-inactive, .wf-cedarvillecursive-n4-inactive, .wf-frederickathegreat-n4-inactive .wf-inactive {
+  font-family: Helvetica, "Lucida Sans","Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-size: 1em;
+  letter-spacing: 0.0035em;
+  line-height: 1.3em;
+}
+
+/* line 12, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_typography.scss */
+body {
+  font-family: "Century Gothic";
+  font-size: 1em;
+  letter-spacing: 0.0055em;
+  line-height: 1.375em;
+}
+
+/* line 17, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_typography.scss */
+.wf-active body {
+  font-family: "IM Fell English";
+  letter-spacing: .02em;
+  font-size: 1.1em;
+  line-height: 1.2em;
+}
+
+/* line 25, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_typography.scss */
+h1 {
+  font-family: "Times Roman";
+  letter-spacing: .18em;
+  font-weight: 700;
+  line-height: .3em;
+  padding-left: .6em;
+}
+
+/* line 32, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_typography.scss */
+.wf-active h1 {
+  /*serif font for headings */
+  font-family: "Alegreya";
+  font-weight: 700;
+  line-height: .4em;
+  letter-spacing: .14em;
+  padding-left: .25em;
+}
+
+/* line 44, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_typography.scss */
+h2, h3, h4, h5, h6 {
+  font-family: Arial;
+}
+
+/* line 47, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_typography.scss */
+.wf-active h2, .wf-active h3, .wf-active h4, .wf-active h5, .wf-active h6 {
+  font-family: "Josefin Sans";
+  /*sans serif*/
+  font-weight: 600;
+  color: black;
+}
+
+/* line 59, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_typography.scss */
+h2 {
+  font-family: Arial;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1.3em;
+  padding: .6em .6em;
+}
+
+/* line 66, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_typography.scss */
+.wf-active h2 {
+  font-family: "Cedarville Cursive";
+  font-weight: 400;
+  font-size: 1.4em;
+  letter-spacing: -.0421em;
+}
+
+/* line 74, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_typography.scss */
+h3 {
+  font-size: 1.4em;
+  padding-left: .5em;
+}
+
+/* line 77, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_typography.scss */
+.wf-active h3 {
+  font-size: 1.5em;
+  padding-left: .6em;
+}
+
+/* line 82, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_typography.scss */
+.external h3 {
+  font-size: 1.2em;
+  padding-left: .75em;
+}
+
+/* line 85, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_typography.scss */
+.wf-active .external h3 {
+  font-size: 1.2em;
+  padding-left: .75em;
+}
+
+/* line 91, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_typography.scss */
+.headertext {
+  font-family: Arial;
+  letter-spacing: .2em;
+}
+
+/* line 94, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_typography.scss */
+.wf-active .headertext {
+  font-family: "Fredericka The Great";
+  letter-spacing: .16em;
+  line-height: .5em;
+}
+
+/* line 101, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_typography.scss */
+nav ul li a {
+  font-family: Arial;
+  font-size: 1.05em;
+  line-height: .5em;
+}
+
+/* line 106, C:/Users/winescape-xx/Desktop/final-nightnoise-assign1/nightnoise-site/sass/_typography.scss */
+.wf-active nav ul li a {
+  font-family: "Alegreya";
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+/*# sourceMappingURL=../css/filemanagement.map */

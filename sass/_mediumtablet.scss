@@ -1,0 +1,67 @@
+ 
+/* mid-range tablet dimensions */
+
+@media (min-width: 480px) and (max-width: 767px) {
+	.col-1-2,.col-2, .col-4-3, .col-2-3, .col-rm-4-3 {
+		 @include span-columns(3);
+	}
+ 	ul {
+		display:block;
+	}
+	.col-1-4,
+	.col-3,
+	.col-4 {
+	}
+	nav ul li a {
+		box-shadow:initial;
+		border-radius: initial;
+	}
+	nav ul {
+		text-align:center;
+		display:block;
+	}
+	nav ul li {
+		margin-left:6%;
+	}
+	nav {
+		padding:.35em;
+	}
+}
+
+@media (min-width: 600px) and (max-width: 759px){
+	p.headertext {
+		width: 15em;
+		left: -3em;
+	}
+}
+
+@media (min-width:480px) and (max-width: 599px) {
+	/*verticalheader self-coded mixin uses :after to fill content into empty spans in html, where each span holds a letter*/
+    /* these are then rotated to create a vertical header */
+	@include verticalheader();
+	@include multicoloredletters();
+
+	body header:before{
+		background: url('../img/background_640.png') no-repeat;
+	}	
+	.header-solidcolorblock
+	{
+	 	width: 12%;
+	}
+	h1::first-letter {
+	  
+	}
+	header {
+		border-bottom: 1px solid black;
+		width:80%;
+		padding: 1em;
+		padding-top:0;
+		margin: 0;
+		margin-left:16%;
+		position:relative;
+		right:0;
+		letter-spacing: .4em;
+		text-align:center;
+		height: 10em;
+	}
+ }

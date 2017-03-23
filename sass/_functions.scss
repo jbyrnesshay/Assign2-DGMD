@@ -1,0 +1,293 @@
+ 
+/* accordian tabs refill pattern from http://refills.bourbon.io/ */
+ .accordion-tabs {
+  $base-border-color: #dcdcdc !default;
+  $base-border-radius: 3px !default;
+  $base-background-color: #fff !default;
+  $base-spacing: 1.5em !default;
+  $action-color: #477dca !default;
+  $dark-gray: #333 !default;
+  $light-gray: #ddd !default;
+  $medium-screen: 40em !default;
+  $tab-border: 1px solid $base-border-color;
+  $tab-content-background: lighten($light-gray, 10);
+  $tab-active-background: $tab-content-background;
+  $tab-inactive-color: $base-background-color;
+  $tab-inactive-hover-color: darken($light-gray, 5);
+  $tab-mode: $medium-screen;
+
+  @include clearfix;
+  line-height: 1.5;
+  margin-bottom: $base-spacing;
+  padding: 0;
+
+  @include media(max-width $tab-mode) {
+    border: $tab-border;
+    border-radius: $base-border-radius;
+  }
+
+  .tab-header-and-content {
+    list-style: none;
+
+    @include media($tab-mode) {
+      display: inline;
+    }
+
+    &:first-child .tab-link {
+      border-top-left-radius: $base-border-radius;
+      border-top-right-radius: $base-border-radius;
+
+      @include media(max-width $tab-mode) {
+        border-top: 0;
+      }
+    }
+
+    &:last-child .tab-link {
+      @include media(max-width $tab-mode) {
+        border-bottom-left-radius: $base-border-radius;
+        border-bottom-right-radius: $base-border-radius;
+      }
+    }
+  }
+
+  .tab-link {
+    background-color: $tab-inactive-color;
+    border-top: $tab-border;
+    color: $dark-gray;
+    display: block;
+    font-weight: bold;
+    padding: ($base-spacing / 2) ($gutter / 2);
+    text-decoration: none;
+
+    @include media($tab-mode) {
+      @include border-top-radius($base-border-radius);
+      border-top: 0;
+      display: inline-block;
+    }
+
+    &:hover {
+      color: $action-color;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &.is-active {
+      background-color: $tab-active-background;
+
+      @include media($tab-mode) {
+        background-color: $tab-active-background;
+        border: $tab-border;
+        border-bottom-color: $tab-active-background;
+        margin-bottom: -1px;
+      }
+    }
+  }
+
+  .tab-content {
+    background: $tab-content-background;
+    display: none;
+    padding: $base-spacing $gutter;
+    width: 100%;
+
+    @include media($tab-mode) {
+      border: $tab-border;
+      border-bottom-left-radius: $base-border-radius;
+      border-bottom-right-radius: $base-border-radius;
+      border-top-right-radius: $base-border-radius;
+      float: left;
+    }
+  }
+}
+  
+
+
+
+/* hover tile animation refill component from 
+http://refills.bourbon.io/components/
+*/
+
+  .hover-tile-outer {
+  $base-border-color: gainsboro !default;
+  $base-line-height: 1.5em !default;
+  $medium-screen: 40em !default;
+  $hover-tile-height: 10em;
+  $base-spacing: 1.5em;
+
+  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png");
+  background-color: beige;
+  background-position: top;
+  background-size: cover;
+  border: 1px solid $base-border-color;
+  cursor: pointer;
+  height: $hover-tile-height;
+  margin-bottom: $base-line-height;
+
+  @include media($medium-screen) {
+    width: 40%;
+  }
+
+  .hover-tile-container {
+    height: $hover-tile-height;
+    overflow: hidden;
+  }
+
+  .hover-tile-container:hover > .hover-tile {
+    transform: translate(0, -100%);
+  }
+
+  .hover-tile {
+    background: inherit;
+    color: white;
+    height: inherit;
+    overflow: hidden;
+    padding: $base-spacing;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .hover-tile-hidden {
+    background: transparentize(#000, 0.5);
+
+    p {
+      color: transparentize(#fff, 0.3);
+      line-height: $base-line-height;
+    }
+
+    h4 {
+      margin: 0 0 0.5em 0;
+    }
+  }
+}
+
+
+
+/*natalya's color functions https://github.com/tallys/color-theory/blob/master/source/stylesheets/_variables.scss*/
+// Check if the color is a cool color
+ 
+//Check if you have a cool color on your hands. Cool colors will overpower warm colors when mixing.
+
+@function is-cool-color($color) {
+  @return hue($color) < 310 and hue($color) > 140;
+}
+
+@function is-high-key-value($color) {
+  @return hue($color) > 20 and hue($color) < 190;
+}
+
+@function is-highest-key-value($color) {
+  @return hue($color) > 30 and hue($color) <90;
+}
+
+//Establish a relationship (similar lighting conditions) between colors.
+
+@function harmonious-mix($mix, $base) {
+  @if (is-cool-color($mix)){
+    @if is-high-key-value($base) {
+      @return mix($mix, $base, 11%);
+    }
+    @else {
+      @return mix($mix, $base, 16%);
+    }
+  }
+  @else {
+    @if is-high-key-value($base) {
+      @return mix($mix, $base, 13%);
+    }
+    @else {
+      @return mix($mix, $base, 23%);
+    }
+  }
+}
+
+@function mix-neutral($color) {
+  @if (is-highest-key-value($color)) {
+    @if is-high-key-value(complement($color)) {
+      @return mix(complement($color), $color, 19%);
+    }
+    @else {
+      @return mix(complement($color), $color, 13%);
+    }
+  }
+  @else if (is-high-key-value($color)) {
+    @if is-high-key-value(complement($color)) {
+      @return mix(complement($color), $color, 31%);
+    }
+    @else {
+      @return mix(complement($color), $color, 23%);
+    }
+  }
+  @else {
+    @if is-highest-key-value(complement($color)) {
+      @return mix(complement($color), $color, 31%);
+    }
+    @if is-high-key-value(complement($color)) {
+      @return mix(complement($color), $color, 26%);
+    }
+    @else {
+      @return mix(complement($color), $color, 23%);
+    }
+  }
+}
+
+@function pick-contrast-of($color) {
+  @if is-high-key-value($color){
+    @if lightness($color) < 30% {
+      @return lighten(complement($color), 86);
+    }
+    @else if lightness($color) > 70% {
+      @return darken(complement($color), 68);
+    }
+    @else {
+      @return darken(complement($color), 53);
+    }
+} @else {
+  @if lightness($color) < 30% {
+      @return lighten(complement($color), 86);
+    }
+    @else if lightness($color) > 70% {
+      @return darken(complement($color), 68);
+    }
+    @else {
+      @return lighten(complement($color), 53);
+    }
+  }
+}
+
+$primary-color: harmonious-mix($second-color, $first-color);
+$complementary-color: harmonious-mix($first-color, $second-color);
+
+$analogous-color: adjust-hue($complementary-color, -40);
+$complementary-analogous: mix($analogous-color, $complementary-color, 66);
+
+// Complementary Neutrals, highlight, midtone, shadow
+
+$complementary-neutral: mix-neutral($complementary-color);
+$complementary-neutral-light: lighten($complementary-neutral, 33);
+$complementary-neutral-dark: darken($complementary-neutral, 33);
+
+// Primary neutrals, highlight, midtone, shadow`
+
+$primary-neutral: mix-neutral($primary-color);
+$primary-neutral-light: lighten($primary-neutral, 33);
+$primary-neutral-dark: darken($primary-neutral, 33);
+
+// Primary tint and shade
+
+$primary-light: mix($primary-neutral-light, $primary-color, 45%);
+$primary-dark: mix($primary-neutral-dark, $primary-color, 45%);
+
+$complementary-light: mix($complementary-neutral-light, $complementary-color, 45%);
+
+// Pure neutrals, highlight, midtone, shadow
+
+$white: lighten($primary-neutral-light, 15);
+$neutral-gray: grayscale($primary-neutral);
+$primary-gray: mix($primary-color, $complementary-color, 30);
+$complementary-gray: mix($complementary-color, $primary-color, 63);
+$black: grayscale($complementary-neutral-dark);
+
+// Analogous Colors
+
+$analogous-color: adjust-hue($complementary-color, -40);
+$complementary-analogous: mix($analogous-color, $complementary-color, 66);

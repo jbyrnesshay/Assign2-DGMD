@@ -1,0 +1,216 @@
+
+
+/* for iphone and small phone screen dimensions.  all rows are follow columna at this screen size */
+@media (max-width: 479px) {
+	body header:before{
+		background:url('../img/background_480.png') no-repeat;
+	}
+
+	@include verticalheader();
+	
+	[class*="col-"] {
+		@include span-columns(6);
+		border-bottom:1px solid black;
+		margin-bottom: 1em;
+	}
+
+	.headertext {
+		width: 10em;
+		font-size: .9em;
+	}
+	/*at this screen dimension, I tun off the iframe display, and turn on the object display */
+	body iframe.col-rm-4-3 {
+		display:none;
+	}
+	 h1 {
+	 	visibility:hidden;
+	}
+	/* i used an object tag with px height only for the special case of windowing an external page within my page in frame1.html and frame2.html
+	only in the case where we are viewing at iphone screen dimensions, otherewise I use iframe.  
+	I was not able to keep the iframe restricted to screen width in all use cases on the iphone*/ 
+	
+	body object.col-rm-4-3 {
+		height:  10000px;
+		border: 0px;
+		margin: 0px;
+		padding: 0px;
+		max-width: 100%;    
+		display:block;
+	}
+	.header-solidcolorblock {
+		height: 7.5em;
+	}
+	.header-solidcolorblock span::after {
+		top: -1.2em;
+		position:relative;
+		margin-left: .5em;
+	}
+
+	header {
+		height:  7.5em;
+	}
+	
+	/*height auto to shrink to content in mobile case */
+	.external .col-2-3 {
+		@include span-columns(6);
+		height: auto;
+		padding: .3em;
+	}
+	.external .col-2-3 p {
+		padding: 0;
+		margin:0;
+	}
+	.col-rm-4-3 {
+		@include span-columns(6);
+	}
+	.col-6 {
+		@include span-columns(6);
+	}
+ 	nav ul {
+		width: 44%;
+		float:left;
+	}
+	nav ul li {
+		margin-left:0;
+		margin-bottom:.75em;
+		background:purple;
+	}
+	nav ul li a {
+		border-radius:0px;
+	}
+	ul {
+ 		padding:0;
+ 	}
+
+
+	/* to follow is burger icon/menu code, various divs and classes and styling used to create the burger menu and to have javascript control 
+	over the functionality as I wanted  it to be */
+	
+	/*used css transition to ease dropdown display, technique from here.  http://stackoverflow.com/questions/3508605/how-can-i-transition-height-0-to-height-auto-using-css*/
+
+ 	/* had some difficulties with getting the display off/on to work using display:none, so researched and found out about transform scaleY
+ 	https://developer.mozilla.org/en-US/docs/Web/CSS/transform */
+ 	
+ 	.dropcontent {
+		position:absolute;
+		margin-top:.5em;
+	    right:.04em;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	    z-index: 1;
+	    transform: scaleY(0); 
+	    transform-origin: top;
+	    transition: transform ease .3s;
+	    visibility:hidden;
+	}
+	/*this div class is just fixing some dimensions so that when the hamburger icon changes occur it does not push other elements */
+ 	.fixbuttonheight{
+ 		height:3em;
+ 		padding:0em;
+ 	}
+	#burger-btn {
+		position:absolute;
+		right:0;
+		display:block;
+		width:3em;
+		margin-right:1em;
+		background:inherit;
+		padding:.4em;
+		font-size: 16px;
+    	border: none;
+    	cursor: pointer;
+	}
+	#burger-btn:hover {
+		border:1px solid black;
+		background:aqua;
+	}
+	#burger-btn:focus {
+	   outline:1px solid black;
+	}
+	/*this use of outline with :focus gets rid of blue border on focus in chrome, which was bothering me, see at
+	http://stackoverflow.com/questions/20340138/remove-blue-border-from-css-custom-styled-button-in-chrome
+	*/
+	li {
+		width:7em;
+	}
+	nav {
+		padding-right:0;
+	}
+	/*top and obttom hamburger lines. idea from https://superdevresources.com/css-hamburger-menu/ */
+	.hamburger-lines{
+		border-top:3px solid black;
+		border-bottom:3px solid black;
+		position:relative;
+		height:2em;
+		display:block;
+		width:2em;
+	}
+	/*hamburger:before method technique for middle hamburger line from 
+	https://superdevresources.com/css-hamburger-menu/ */
+	 
+	.hamburger-lines:before {
+		content:"";
+		position:absolute;
+		width:100%;
+		left:0;
+		top: 45%;
+		border-top:3px solid black;
+	}
+	/*using transform rotate to make neat rotation of hamburger icon when clicked/opened */
+	#burger-btn.rotate {
+		transform: rotate(90deg);
+	}
+ 	button#burger-btn div {
+		background:black;
+		position:relative;
+		display:block;
+		height:5px;
+		width:65%;
+		margin:.4em;
+	}
+ 
+	#burger-btn:focus {
+		border:none;
+	}
+	#drop-area {
+		position:relative;
+		display:block;
+		float:right;
+	}
+	#ul {
+		position:relative;
+		display:inline-block;
+		width:100%;
+	}
+	.dropcontent a {
+		display:block;
+		color: black;
+	    padding: 12px 16px;
+	    text-decoration: none;
+	}
+	nav ul li a:hover  {
+		background:grey;
+		color:white;
+	}
+	nav ul li a:focus {
+		background:aqua;
+	}
+	nav ul li {
+	 	padding: 0em;
+		margin: 0;
+	}
+	nav ul li a {
+		padding:0;
+		border:1px solid black;
+	}
+	/* class used in burger menu, added via javascript to displpay dropdown*/
+	.show {
+		visibility:visible;
+		transform: scaleY(1);
+} 
+
+
+	
+
+
+
+}

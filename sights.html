@@ -1,0 +1,96 @@
+<!--additional responsive images on this page, sights.html-->
+<!--authored by Joachim Byrnes-Shay. Except as cited, all programming/code and images are my own code/photography-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>my trip to tibet</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" href="css/filemanagement.css">
+		<script>
+		// Picture element HTML5 shiv
+			document.createElement( "picture" );
+		</script>
+		<script src="js/picturefill.min.js" async></script>
+	</head>
+	<body id="sights">
+		<div id="wrap" class="outercontainer">
+			<div class="row">
+				<header>
+					<h1 class="rotateh1"><span>t</span><span>i</span><span>b</span><span>e</span><span>t.</span> </h1><p class="headertext"> A far away land.</p>
+				</header>
+			</div>
+			<div class="row">
+				<nav>
+					<div id="drop-area">
+						<div class="fixbuttonheight">
+							<button onclick="burgermenu();" id="burger-btn" >
+							<span class="hamburger-lines"></span></button>
+						</div>
+						<div class="dropcontent" id="myDropdown">
+							<ul id="ul">
+								<li> <a href="index.html">intro</a></li>
+								<li> <a href="sights.html">sights</a></li>
+								<li> <a href="frame1.html">tibet</a></li>
+								<li> <a href="frame2.html">momos</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+			<div class="innercontainer">
+			<div class="row">
+				<article class="col-6">
+					<h2> Things I saw</h2>
+				</article>
+			</div>
+			<div class="row sameHeights">
+				<!--span 3/6 columns, and then 6/6 at < 480px-->
+				<article class="col-3" data-key="sameHeights">
+					<h3>Debates</h3>
+					<picture>
+						<source srcset="img/sera_monks_200.png" media="(max-width:600px)">
+						<source srcset="img/sera_monks_215.png" media="(max-width:900px)">
+						<img src="img/sera_monks_290.png" alt="ting">
+					</picture>
+					<p>The monk debates at Sera Monastery are a unique experience. This is not the place to explain a lot about what is going on with it, but here is one of the photos I took. monks debating on sera monastery grounds.  The standing monk in the foreground is debating with the seated monk, and his posture reflects that he is winding up to clap his hands forecefully, in one of the debating rituals the monks are known for.</p>
+				</article>
+				<!--span 3/6 columns, and then 6/6 at < 480px-->
+				<article class="col-3" data-key="sameHeights">
+					<h3>Yaks </h3>
+					<picture>
+						<source srcset="img/yak_160.png" media="(max-width:479px)">
+						<source srcset="img/yak_200.png" media="(max-width:600px)">
+						<source srcset="img/yak_215.png" media="(max-width:900px)">
+						<img src="img/yak_250.png" alt="ting">
+					</picture>
+					<p>I saw a yak wandering free on the grounds of the Sera Monastery. I don't know where it was going or where it was coming from. Quite likely, it belonged to the monks. It was not my first yak, but definitely my first yak sighting at a monastery. This is one of about 10 pictures I took of it.</p>
+				</article>
+			</div>
+			<div class="row sameHeights">
+				<!--span 2/6 columns, bump to 3/6, and then 6/6 at < 480px-->
+				<article class="col-2-3" data-key="sameHeights">
+					<h3>Bharkor St </h3>
+					<p>Bharkor Square is an old section of Lhasa, which preserves a more traditional village feel, with various traditional markets, shops, and restaurants. As the site of Jokhang Temple, it is also important to pilgrams and to residents who come for religious practicies on a daily basis.
+					</p>
+				</article>
+				<!--span 4/6 columns, drop to 3/6, and then 6/6 at < 480px-->
+				<article class="col-4-3" data-key="sameHeights">
+					<h3>Food </h3>
+					<p>A very popular food are momos, a type of dumpling, often filled with meat. The ones I had were filled with yak meat. The noodle soup I had for breakfast also included yak meat. Yak meat is very prevalent. It is the most popular meat, kind of the equivalent of beef, but without the competition that beef has in the United States. Tibetans are very reliant upon it. Another traditional breakfast is barley porridge, which I gave a pass. There were some dishes available with vegetables including potatoes, but i was left with the impression that noodles, dumplings, soup, and yak were the main staples. Unfortunately, time was short and on this trip I didn’t have any butter tea ... a preparation of tea which is made with, you guessed it, yak butter.</p>
+				</article>
+			</div>
+			<div class="row">
+				<!-- span all 6 columns-->
+				<div class="col-6">
+					<footer>
+						<p>&copy; 2017 Joachim Byrnes-Shay </p>
+					</footer>
+				</div>
+			</div>
+			</div>
+		</div>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

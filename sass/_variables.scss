@@ -1,0 +1,30 @@
+
+
+$grid-columns: 6;
+
+$string: "Tibet";
+$ltrcount : str-length($string);
+$ltrcolors: blue green yellow red orange;
+$countlength: length($ltrcolors);
+$odd:odd;
+$even:even;
+$half : 50%;
+$whole : 100%;
+ 
+$primary-color: #FBE7C3;
+$complement: complement($primary-color);
+$first-color: hsl(28, 100%, 50%);
+$second-color: complement($first-color);
+.big {
+ 
+	background: $second-color;
+}
+
+//Media query values
+$small: 34.375em; //550px
+$sm-medium: 53.063em; //849px
+$medium: 53.125em; //850px
+
+
+
+//480 px 30em

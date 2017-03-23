@@ -1,0 +1,23 @@
+
+/* miscellanous- non-device based media queries  */
+
+/*this is my first header background image swap */
+@media (max-width: 900px) {
+	body header:before{
+		background: url('../img/tibet_background1_900x.png') no-repeat;
+		/*only this image is not my own (not photographed by me), the image here named tibet_background1_900x.png is from pixabay.com */
+	}
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+

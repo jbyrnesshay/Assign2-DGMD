@@ -1,0 +1,67 @@
+
+
+/*work in progress:  this is really 2 mixins in one, need to separate */
+@mixin multicoloredletters {
+  @for $i from $ltrcount through 1 {
+    h1.rotateh1 span:nth-child(#{$i}) {
+   	  //content: $string#{$i};
+   	  display:block;
+      color:nth($ltrcolors, $i);
+      transform: rotate(30deg);
+    }
+  }
+}
+
+@mixin verticalheader {
+  @for $i from $ltrcount through 1 {
+   	$calc : $ltrcount - ($i - 1);
+	  .header-solidcolorblock span:nth-child(#{$i})::after {
+     	content: str-slice($string, $calc, $calc);
+     	display:block;
+     	letter-spacing: .01em;
+     	transform: rotate(-90deg);
+     	font-family: Alegreya;
+      font-size:1.4em;
+     	font-weight:bold;
+      color:brown;
+     	width: 1.2em;
+      height: 1.1em;
+     	left: -1em;
+      position:relative;
+      text-shadow: 5px 5px 15px grey;
+   	}
+  }
+}
+
+@mixin stackvals($value) {
+  width: $value;
+  margin:  0;
+}
+
+
+@mixin stack-li($selector, $num) {
+    /* $selector was assigned the value of parent selector using ampersand in _largephone.scss media query */
+    @if $selector == "li a" {
+        &:nth-of-type(#{$num}) 
+        {
+          @if $num == odd {
+            float: right;
+          }
+          @else {
+            float: left;
+          }
+          @include stackvals($whole);
+        }
+      }
+    @else if $selector == "li" {
+       &:nth-of-type(#{$num}) {
+        @if $num == odd {
+          float:  left;
+        }
+        @else {
+          float: right;
+        }
+        @include stackvals($half);
+      }
+    }
+  }
